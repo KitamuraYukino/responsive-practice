@@ -5,3 +5,181 @@
   justify-content: center;
 }
 
+.q5-container{
+  display: flex;
+  justify-content: center;
+}
+
+.clearfix{
+  width: 600px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.base{
+  width: 100%;
+}
+
+.q1{
+  width: 400px;
+  height: 400px;
+  background: #f00;
+}
+
+.box-red{
+  width: 300px;
+  height: 300px;
+  background: #f00;
+}
+
+.box-blue{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+}
+
+.box-green{
+  width: 300px;
+  height: 300px;
+  background: #2f0;
+  margin-left: 150px;
+}
+
+.floatbox-red{
+  width: 300px;
+  height: 300px;
+  background: #f00;
+  float: left;
+}
+
+.floatbox-blue{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+  float: left;
+}
+
+.box-q5-red{
+  width: 300px;
+  height: 300px;
+  background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-q5-blue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+}
+
+.box-q5-orange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background: #ff8400;
+}
+
+.box-q6-green{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-q6-yellow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background: #d4ff00;
+}
+
+.box-q6-pink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background: #ff00e1;
+}
+
+.box-q7-red{
+  width: 300px;
+  height: 300px;
+  background: #f00;
+}
+
+.box-q7-green{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+}
+
+.box-q7-blue{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+}
+
+@media screen and (max-width:960px) {
+  .q1{
+    width: 200px;
+    height: 200px;
+  }
+
+  .box-red{
+    background: #007bff;
+  }
+
+  .box-green{
+    margin-left: 50px;
+  }
+
+  .floatbox-red{
+    margin: 0;
+    float: none;
+  }
+
+  .floatbox-blue{
+    margin: 0;
+    float: none;
+  }
+
+  .q5-container{
+    flex-direction: row-reverse;
+  }
+
+  .box-q6-green{
+    order: 1;
+  }
+
+  .box-q6-yellow{
+    order: 2;
+  }
+
+  .box-q7-red{
+    display: none;
+  }
+}
+
+@media screen and (min-width:961px){
+  .box-q7-blue{
+    display: none;
+  }
+}
