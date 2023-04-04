@@ -8,6 +8,7 @@
 .q5-container{
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .clearfix{
@@ -99,6 +100,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
 }
 
 .box-q6-yellow{
@@ -108,6 +110,7 @@
   width: 300px;
   height: 300px;
   background: #d4ff00;
+  order: 2;
 }
 
 .box-q6-pink{
@@ -117,24 +120,28 @@
   width: 300px;
   height: 300px;
   background: #ff00e1;
+  order: 3;
 }
 
 .box-q7-red{
   width: 300px;
   height: 300px;
   background: #f00;
+  display: block;
 }
 
 .box-q7-green{
   width: 300px;
   height: 300px;
   background: #00ff51;
+  display: block;
 }
 
 .box-q7-blue{
   width: 300px;
   height: 300px;
   background: #0008ff;
+  display: block;
 }
 
 @media screen and (max-width:960px) {
@@ -152,12 +159,10 @@
   }
 
   .floatbox-red{
-    margin: 0;
     float: none;
   }
 
   .floatbox-blue{
-    margin: 0;
     float: none;
   }
 
@@ -165,12 +170,16 @@
     flex-direction: row-reverse;
   }
 
-  .box-q6-green{
+  .box-q6-pink{
     order: 1;
   }
 
-  .box-q6-yellow{
+  .box-q6-green{
     order: 2;
+  }
+
+  .box-q6-yellow{
+    order: 3;
   }
 
   .box-q7-red{
